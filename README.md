@@ -14,11 +14,14 @@
 
 ```plaintext
 RainPYCHIRPS/
-├── input/                 # Carpeta para datos de entrada ()
+├── input/                 # Carpeta para datos de entrada (shape)
+   ├── area-estudio/       # Contiene los poligonos del área de interes para analizar (area-estudio.shp) el campo que contiene el nombre de los polinognos debe llamarse "nombre"
 ├── output/                # Resultados generados (gráficos, tablas, informes)
-│   ├── datos-tabulares/   # Resultados tabulares en formato Excel
-│   ├── graficos/          # Gráficos generados
-│   └── informes/          # Informes en Word
+   ├── imagenes-chirps-mes/# Carpeta de aguarda las imagenes satelitales CHIRPS .tif
+      ├── comprimidos/     # Carpeta de aguarda las imagenes satelitales CHIRPS .gz
+   ├── datos-tabulares/    # Resultados tabulares en formato Excel
+   ├── graficos/           # Gráficos generados
+   └── informes/           # Informes en Word
 ├── 1_creacion_carpetas.py # Script para crear estructura de carpetas
 ├── 2_descargar_chirps.py  # Script para descargar datos CHIRPS
 ├── 3_descomprimir.py      # Script para descomprimir archivos CHIRPS
@@ -52,7 +55,7 @@ RainPYCHIRPS/
 
 ## Uso
 
-1. **Configura los datos de entrada**: Coloca los shapefiles en la carpeta `input/area-estudio/`.
+1. **Configura los datos de entrada**: Coloca al lado de los scripts una carpeta llamada "area-estudio" con los archivos "area-estudio.shp" que sera el área de interes para analizar (RECUERDA: el campo que contiene el nombre de los polinognos debe llamarse "nombre"), en la ejecución del primer script se movera la carpeta al lugar correspondiente.
 2. **Ejecuta el script principal**:
    ```bash
    python main.py
