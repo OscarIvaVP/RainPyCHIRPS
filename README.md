@@ -14,7 +14,7 @@
 
 ```plaintext
 RainPYCHIRPS/
-├── input/                 # Carpeta para datos de entrada (shapefiles, etc.)
+├── input/                 # Carpeta para datos de entrada ()
 ├── output/                # Resultados generados (gráficos, tablas, informes)
 │   ├── datos-tabulares/   # Resultados tabulares en formato Excel
 │   ├── graficos/          # Gráficos generados
@@ -85,7 +85,7 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENS
 
 ## Contacto
 
-Para consultas o comentarios, puedes contactarme en [tu-email@example.com].
+Para consultas o comentarios, puedes contactarme en [oscarvargas@trabajocientific.com].
 
 ---
 
